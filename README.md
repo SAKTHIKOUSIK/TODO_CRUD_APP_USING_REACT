@@ -17,7 +17,7 @@
 
 <br/>
 
-## Available Scripts
+## Available Scripts:
 
 #### `npm start`
 
