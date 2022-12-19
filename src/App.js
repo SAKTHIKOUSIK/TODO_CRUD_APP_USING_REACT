@@ -1,11 +1,14 @@
-import { CssBaseline } from '@mui/material';
 import ToDo from './components/ToDo';
+import { Container, CssBaseline } from '@mui/material';
+import { containerStyle } from './theme/customStyles';
 
 const App = () => {
   return (
     <>
       <CssBaseline />
-      <ToDo />
+      <Container sx={containerStyle}>
+        <ToDo />
+      </Container>
     </>
   );
 };

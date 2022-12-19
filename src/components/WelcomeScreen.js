@@ -5,7 +5,10 @@ const WelcomeScreen = () => {
     return (
         <Box textAlign="center">
             <Box component="figure">
-                <Box component="img" src="/img/todolist.svg" width={500} />
+                <Box
+                    component="img"
+                    src="/img/todolist.svg"
+                />
             </Box>
             <Box mt={3}>
                 <Typography variant="h5">

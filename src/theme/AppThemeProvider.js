@@ -5,10 +5,20 @@ const theme = createTheme({
     components: {
         MuiCssBaseline: {
             styleOverrides: {
+                html: {
+                    fontSize: "16px",
+
+                    '@media (max-width: 576px)': {
+                        fontSize: "14px",
+                    }
+                },
                 body: {
                     backgroundColor: "#f5f9fc"
+                    // backgroundColor: "#13131f"
                 },
                 img: {
+                    maxWidth: "100%",
+                    height: "100%",
                     userSelect: "none",
                     verticalAlign: "middle"
                 }
@@ -17,7 +27,7 @@ const theme = createTheme({
         MuiIconButton: {
             defaultProps: {
                 sx: {
-                    backgroundColor: "#ECEDF6",
+                    // backgroundColor: "#00476D",
                     // color: "info.main",
                     borderRadius: "4px",
                 }
@@ -27,7 +37,8 @@ const theme = createTheme({
     palette: {
         primary: {
             main: "#518AFF"
-        }
+        },
+        // mode: "dark"
     }
 });
 

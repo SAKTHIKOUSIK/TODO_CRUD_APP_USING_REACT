@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
-import { Container, Box, Paper } from '@mui/material';
+import { Box, Paper } from '@mui/material';
 import AddTask from './AddTask';
 import TaskList from './TaskList';
 import WelcomeScreen from './WelcomeScreen';
-
-const style = {
-    display: "grid",
-    placeItems: "center",
-};
+import { todoBoxStyle, taskBoxStyle } from '../theme/customStyles';
+import Header from './Header';
 
 
 const ToDo = () => {
@@ -51,31 +48,28 @@ const ToDo = () => {
 
 
     return (
-        <>
-            <Container sx={style}>
-                <Box sx={{ maxWidth: 750, width: "100%", mt: 5, }}>
-                    <AddTask
-                        inputValue={inputValue}
-                        setInputValue={setInputValue}
-                        addTask={addTask}
-                        isEditing={isEditing}
-                    />
-                    <Paper elevation={3} sx={{ bgcolor: "#ECEDF6", p: 2, mt: 4 }}>
-                        {
-                            tasks?.[0] ? (
-                                <TaskList
-                                    tasks={tasks}
-                                    deleteTask={deleteTask}
-                                    handleIsEditing={handleIsEditing}
-                                />
-                            ) : (
-                                <WelcomeScreen />
-                            )
-                        }
-                    </Paper>
-                </Box>
-            </Container>
-        </>
+        <Box sx={todoBoxStyle}>
+            <Header />
+            <AddTask
+                inputValue={inputValue}
+                setInputValue={setInputValue}
+                addTask={addTask}
+                isEditing={isEditing}
+            />
+            <Paper elevation={3} sx={taskBoxStyle}>
+                {
+                    tasks?.[0] ? (
+                        <TaskList
+                            tasks={tasks}
+                            deleteTask={deleteTask}
+                            handleIsEditing={handleIsEditing}
+                        />
+                    ) : (
+                        <WelcomeScreen />
+                    )
+                }
+            </Paper>
+        </Box>
     );
 };
 
