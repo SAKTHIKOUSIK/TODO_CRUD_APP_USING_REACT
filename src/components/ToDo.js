@@ -4,7 +4,6 @@ import AddTask from './AddTask';
 import TaskList from './TaskList';
 import WelcomeScreen from './WelcomeScreen';
 import { todoBoxStyle, taskBoxStyle } from '../theme/customStyles';
-import Header from './Header';
 
 
 const ToDo = () => {
@@ -49,13 +48,14 @@ const ToDo = () => {
 
     return (
         <Box sx={todoBoxStyle}>
-            <Header />
+
             <AddTask
                 inputValue={inputValue}
                 setInputValue={setInputValue}
                 addTask={addTask}
                 isEditing={isEditing}
             />
+
             <Paper elevation={3} sx={taskBoxStyle}>
                 {
                     tasks?.[0] ? (

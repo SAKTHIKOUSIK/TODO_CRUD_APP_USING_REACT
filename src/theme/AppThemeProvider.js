@@ -13,8 +13,7 @@ const theme = createTheme({
                     }
                 },
                 body: {
-                    backgroundColor: "#f5f9fc"
-                    // backgroundColor: "#13131f"
+                    backgroundColor: "#f5f9fc",
                 },
                 img: {
                     maxWidth: "100%",
@@ -38,7 +37,6 @@ const theme = createTheme({
         primary: {
             main: "#518AFF"
         },
-        // mode: "dark"
     }
 });
 

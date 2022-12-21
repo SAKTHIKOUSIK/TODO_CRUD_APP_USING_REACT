@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box, TextField, IconButton, InputAdornment, Tooltip } from '@mui/material';
-import AddIcon from '@mui/icons-material/Add';
-import AddTaskIcon from '@mui/icons-material/AddTask';
+import { Add as AddIcon, AddTask as AddTaskIcon } from '@mui/icons-material';
 import { day, time } from '../utils/helpers';
 import { textFieldStyle } from '../theme/customStyles';
 
@@ -23,8 +22,6 @@ const AddTask = ({ inputValue, setInputValue, addTask, isEditing }) => {
     <Box
       component="form"
       onSubmit={handleSubmit}
-      mt={3}
-      mb={5}
     >
       <TextField
         sx={textFieldStyle}

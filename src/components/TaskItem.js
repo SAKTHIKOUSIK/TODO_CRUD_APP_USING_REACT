@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box, Stack, Typography, IconButton, Tooltip } from '@mui/material';
-import EditIcon from '@mui/icons-material/Edit';
-import DeleteIcon from '@mui/icons-material/Delete';
+import { Edit, Delete } from '@mui/icons-material';
 import { taskItemStyle } from '../theme/customStyles';
 
 const TaskItem = ({ taskItem, deleteTask, handleIsEditing }) => {
@@ -29,7 +28,7 @@ const TaskItem = ({ taskItem, deleteTask, handleIsEditing }) => {
                         aria-label="edit"
                         onClick={() => handleIsEditing(taskItem)}
                     >
-                        <EditIcon />
+                        <Edit />
                     </IconButton>
                 </Tooltip>
 
@@ -38,7 +37,7 @@ const TaskItem = ({ taskItem, deleteTask, handleIsEditing }) => {
                         aria-label="delete"
                         onClick={() => deleteTask(id)}
                     >
-                        <DeleteIcon />
+                        <Delete />
                     </IconButton>
                 </Tooltip>
             </Stack>
