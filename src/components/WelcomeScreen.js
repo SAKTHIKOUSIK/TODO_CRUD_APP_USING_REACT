@@ -3,10 +3,11 @@ import { Box, Typography } from '@mui/material';
 
 const WelcomeScreen = () => {
     return (
-        <Box textAlign="center">
+        <Box textAlign="center" p={1}>
             <Box component="figure">
                 <Box
                     component="img"
+                    width={{ sm: 0.9 }}
                     src="/img/todolist.svg"
                 />
             </Box>

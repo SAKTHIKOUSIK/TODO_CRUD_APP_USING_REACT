@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Stack, Typography, IconButton, Tooltip } from '@mui/material';
+import { Stack, Typography, IconButton, Tooltip, Checkbox } from '@mui/material';
 import { Edit, Delete } from '@mui/icons-material';
 import { taskItemStyle } from '../theme/customStyles';
 
@@ -14,11 +14,17 @@ const TaskItem = ({ taskItem, deleteTask, handleIsEditing }) => {
             alignItems="center"
             sx={taskItemStyle}
         >
-            <Box>
-                <Typography variant="h6">
+            <Stack direction="row" alignItems="center">
+                <Checkbox
+                    value=""
+                    // checked={ }
+                    // onChange={ }
+                    color="primary"
+                />
+                <Typography variant="h6" ml={1.5}>
                     {value}
                 </Typography>
-            </Box>
+            </Stack>
             <Stack direction="row" columnGap={2}>
                 <Tooltip title="Edit">
                     <IconButton

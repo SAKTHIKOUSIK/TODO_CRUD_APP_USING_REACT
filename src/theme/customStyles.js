@@ -13,7 +13,7 @@ export const todoBoxStyle = {
 
 export const taskBoxStyle = {
     mt: 5,
-    p: { xs: 1.8, sm: 2.5 },
+    p: { xs: 1.6, sm: 2.5 },
     bgcolor: "transparent",
     backgroundImage: "none",
     borderRadius: "12px",

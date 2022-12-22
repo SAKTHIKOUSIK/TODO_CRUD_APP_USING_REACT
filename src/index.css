@@ -1,27 +1,16 @@
+/* CSS Reset */
 
 ::-webkit-scrollbar {
-    width: 0.6vw;
+    display: none;
 }
-
-/* ::-webkit-scrollbar-track {
-    background-color: var(--track-color);
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--thumb-color);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: var(--thumb-hover-color);
-} */
 
 ::selection {
-    background-color: red;
+    background-color: #3F3D56;
     color: #fff;
 }
 
 ::-moz-selection {
-    background-color: var(--main-color-2);
+    background-color: #3F3D56;
     color: #fff;
 }
 
@@ -35,13 +24,13 @@
 
 html {
     font-size: 16px;
-    scrollbar-width: thin;
-    /* scrollbar-color: var(--thumb-color) var(--track-color); */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 500px) {
     html {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
