@@ -5,7 +5,7 @@ import { taskItemStyle } from '../theme/customStyles';
 
 const TaskItem = ({ taskItem, deleteTask, handleIsEditing }) => {
 
-    const { id, value, day, time } = taskItem;
+    const { id, value } = taskItem;
 
     return (
         <Stack
@@ -17,9 +17,6 @@ const TaskItem = ({ taskItem, deleteTask, handleIsEditing }) => {
             <Box>
                 <Typography variant="h6">
                     {value}
-                </Typography>
-                <Typography variant="body2" color="gray">
-                    {day} | {time}
                 </Typography>
             </Box>
             <Stack direction="row" columnGap={2}>

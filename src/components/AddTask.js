@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box, TextField, IconButton, InputAdornment, Tooltip } from '@mui/material';
 import { Add as AddIcon, AddTask as AddTaskIcon } from '@mui/icons-material';
-import { day, time } from '../utils/helpers';
 import { textFieldStyle } from '../theme/customStyles';
 
 const AddTask = ({ inputValue, setInputValue, addTask, isEditing }) => {
@@ -10,9 +9,7 @@ const AddTask = ({ inputValue, setInputValue, addTask, isEditing }) => {
     e.preventDefault();
     addTask({
       id: Date.now(),
-      value: inputValue,
-      day: day,
-      time: time
+      value: inputValue
     });
     setInputValue("");
   };

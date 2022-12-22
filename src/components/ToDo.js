@@ -48,7 +48,6 @@ const ToDo = () => {
 
     return (
         <Box sx={todoBoxStyle}>
-
             <AddTask
                 inputValue={inputValue}
                 setInputValue={setInputValue}
@@ -56,7 +55,7 @@ const ToDo = () => {
                 isEditing={isEditing}
             />
 
-            <Paper elevation={3} sx={taskBoxStyle}>
+            <Paper elevation={8} sx={taskBoxStyle}>
                 {
                     tasks?.[0] ? (
                         <TaskList

@@ -2,6 +2,12 @@ import React from 'react';
 import { createTheme, ThemeProvider } from '@mui/material';
 
 const theme = createTheme({
+    palette: {
+        mode: "dark",
+        primary: {
+            main: "#a9afc3"
+        },
+    },
     components: {
         MuiCssBaseline: {
             styleOverrides: {
@@ -13,7 +19,7 @@ const theme = createTheme({
                     }
                 },
                 body: {
-                    backgroundColor: "#f5f9fc",
+                    backgroundColor: "#1e1e2c",
                 },
                 img: {
                     maxWidth: "100%",
@@ -26,18 +32,13 @@ const theme = createTheme({
         MuiIconButton: {
             defaultProps: {
                 sx: {
-                    // backgroundColor: "#00476D",
-                    // color: "info.main",
-                    borderRadius: "4px",
+                    backgroundColor: "rgba(255, 255, 255, 0.035)",
+                    color: "primary.main",
+                    borderRadius: "8px",
                 }
             }
-        }
-    },
-    palette: {
-        primary: {
-            main: "#518AFF"
         },
-    }
+    },
 });
 
 const AppThemeProvider = ({ children }) => {
