@@ -9,26 +9,6 @@ const theme = createTheme({
         },
     },
     components: {
-        MuiCssBaseline: {
-            styleOverrides: {
-                html: {
-                    fontSize: "16px",
-
-                    '@media (max-width: 576px)': {
-                        fontSize: "14px",
-                    }
-                },
-                body: {
-                    backgroundColor: "#1e1e2c",
-                },
-                img: {
-                    maxWidth: "100%",
-                    height: "100%",
-                    userSelect: "none",
-                    verticalAlign: "middle"
-                }
-            }
-        },
         MuiIconButton: {
             defaultProps: {
                 sx: {
