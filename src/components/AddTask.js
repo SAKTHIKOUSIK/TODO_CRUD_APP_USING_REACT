@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box, TextField, IconButton, InputAdornment, Tooltip } from '@mui/material';
 import { Add as AddIcon, AddTask as AddTaskIcon } from '@mui/icons-material';
-import { textFieldStyle } from '../theme/customStyles';
 
 const AddTask = ({ inputValue, setInputValue, addTask, isEditing }) => {
 
@@ -22,7 +21,6 @@ const AddTask = ({ inputValue, setInputValue, addTask, isEditing }) => {
       onSubmit={handleSubmit}
     >
       <TextField
-        sx={textFieldStyle}
         placeholder="Add new task..."
         required
         autoFocus

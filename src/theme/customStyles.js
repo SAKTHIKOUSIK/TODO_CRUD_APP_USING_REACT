@@ -20,9 +20,6 @@ export const taskBoxStyle = {
     border: "1px solid rgba(255, 255, 255, 0.125)",
 };
 
-export const textFieldStyle = {
-};
-
 export const taskItemStyle = {
     bgcolor: "#191928",
     borderRadius: "8px",
@@ -31,6 +28,6 @@ export const taskItemStyle = {
 };
 
 export const checkedItemStyle = {
-    textDecoration: "line-through",
-    color: "grey"
+    ...taskItemStyle,
+    opacity: 0.5
 };

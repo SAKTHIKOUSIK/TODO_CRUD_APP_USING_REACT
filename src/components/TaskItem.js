@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Stack, Typography, IconButton, Tooltip, Checkbox } from '@mui/material';
 import { Edit, Delete } from '@mui/icons-material';
-import { taskItemStyle } from '../theme/customStyles';
+import { checkedItemStyle, taskItemStyle } from '../theme/customStyles';
 
 const TaskItem = ({ taskItem, deleteTask, checkTask, handleIsEditing }) => {
 
@@ -21,7 +21,7 @@ const TaskItem = ({ taskItem, deleteTask, checkTask, handleIsEditing }) => {
             direction="row"
             justifyContent="space-between"
             alignItems="center"
-            sx={taskItemStyle}
+            sx={!isChecked ? taskItemStyle : checkedItemStyle}
         >
             <Stack direction="row" alignItems="center">
                 <Checkbox
