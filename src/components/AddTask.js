@@ -9,7 +9,8 @@ const AddTask = ({ inputValue, setInputValue, addTask, isEditing }) => {
     e.preventDefault();
     addTask({
       id: Date.now(),
-      value: inputValue
+      value: inputValue,
+      checked: false
     });
     setInputValue("");
   };

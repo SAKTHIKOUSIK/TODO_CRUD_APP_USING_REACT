@@ -37,6 +37,19 @@ const ToDo = () => {
         setTasks(prevState => [...prevState.filter(item => item.id !== taskId)]);
     };
 
+    // toggling the Checked state of a task
+    const checkTask = (taskId) => {
+        setTasks(prevState => prevState.map(item => {
+            if (item.id === taskId) {
+                return {
+                    ...item,
+                    checked: !item.checked
+                };
+            }
+            return item;
+        }));
+    };
+
     // Editing a task
     const handleIsEditing = (taskItem) => {
         setIsEditing(true);
@@ -61,6 +74,7 @@ const ToDo = () => {
                         <TaskList
                             tasks={tasks}
                             deleteTask={deleteTask}
+                            checkTask={checkTask}
                             handleIsEditing={handleIsEditing}
                         />
                     ) : (

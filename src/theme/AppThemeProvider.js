@@ -7,6 +7,9 @@ const theme = createTheme({
         primary: {
             main: "#a9afc3"
         },
+        text: {
+            primary: "#c3cadf"
+        }
     },
     components: {
         MuiIconButton: {
@@ -18,6 +21,13 @@ const theme = createTheme({
                 }
             }
         },
+        MuiCheckbox: {
+            defaultProps: {
+                sx: {
+                    padding: 0,
+                }
+            }
+        }
     },
 });
 

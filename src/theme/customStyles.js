@@ -26,5 +26,11 @@ export const textFieldStyle = {
 export const taskItemStyle = {
     bgcolor: "#191928",
     borderRadius: "8px",
-    p: 2
+    p: 2,
+    overflow: "hidden"
+};
+
+export const checkedItemStyle = {
+    textDecoration: "line-through",
+    color: "grey"
 };

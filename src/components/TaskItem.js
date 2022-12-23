@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Stack, Typography, IconButton, Tooltip, Checkbox } from '@mui/material';
 import { Edit, Delete } from '@mui/icons-material';
 import { taskItemStyle } from '../theme/customStyles';
 
-const TaskItem = ({ taskItem, deleteTask, handleIsEditing }) => {
+const TaskItem = ({ taskItem, deleteTask, checkTask, handleIsEditing }) => {
 
-    const { id, value } = taskItem;
+    const { id, value, checked } = taskItem;
+
+    // this state is just scoped to the individual instance of the checkboxes and also allows to update their values.
+    const [isChecked, setIsChecked] = useState(checked);
+
+    const handleIsChecked = () => {
+        setIsChecked(prevState => !prevState);
+        checkTask(id);
+    };
+
 
     return (
         <Stack
@@ -16,12 +25,16 @@ const TaskItem = ({ taskItem, deleteTask, handleIsEditing }) => {
         >
             <Stack direction="row" alignItems="center">
                 <Checkbox
-                    value=""
-                    // checked={ }
-                    // onChange={ }
-                    color="primary"
+                    name={value}
+                    checked={isChecked}
+                    onChange={handleIsChecked}
+                    disableRipple
                 />
-                <Typography variant="h6" ml={1.5}>
+                <Typography
+                    variant="h6"
+                    ml={1.6}
+                    sx={{ textDecoration: isChecked ? "line-through" : "none" }}
+                >
                     {value}
                 </Typography>
             </Stack>
