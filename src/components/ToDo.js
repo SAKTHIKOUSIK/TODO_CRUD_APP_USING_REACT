@@ -4,12 +4,13 @@ import AddTask from './AddTask';
 import TaskList from './TaskList';
 import WelcomeScreen from './WelcomeScreen';
 import { todoBoxStyle, taskBoxStyle } from '../theme/customStyles';
+import useLocalStorage from '../hooks/useLocalStorage';
 
 
 const ToDo = () => {
 
     const [inputValue, setInputValue] = useState("");
-    const [tasks, setTasks] = useState([]);
+    const [tasks, setTasks] = useLocalStorage("todoList", []);
     const [isEditing, setIsEditing] = useState(false);
     const [editedItemId, setEditedItemId] = useState(null);
 
