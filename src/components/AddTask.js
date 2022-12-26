@@ -17,6 +17,8 @@ const AddTask = ({ inputValue, setInputValue, addTask, isEditing }) => {
 
   return (
     <Box
+      mt={4}
+      mb={5}
       component="form"
       onSubmit={handleSubmit}
     >

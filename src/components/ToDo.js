@@ -5,6 +5,7 @@ import TaskList from './TaskList';
 import WelcomeScreen from './WelcomeScreen';
 import { todoBoxStyle, taskBoxStyle } from '../theme/customStyles';
 import useLocalStorage from '../hooks/useLocalStorage';
+import Header from './Header';
 
 
 const ToDo = () => {
@@ -62,6 +63,8 @@ const ToDo = () => {
 
     return (
         <Box sx={todoBoxStyle}>
+            <Header />
+
             <AddTask
                 inputValue={inputValue}
                 setInputValue={setInputValue}

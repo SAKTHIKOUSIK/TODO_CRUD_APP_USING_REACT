@@ -6,13 +6,12 @@ export const containerStyle = {
 };
 
 export const todoBoxStyle = {
-    maxWidth: 750,
+    maxWidth: 800,
     width: "100%",
     mt: 3,
 };
 
 export const taskBoxStyle = {
-    mt: 5,
     p: { xs: 1.6, sm: 2.5 },
     bgcolor: "transparent",
     backgroundImage: "none",
