@@ -5,12 +5,12 @@
 }
 
 ::selection {
-    background-color: #3F3D56;
+    background-color: #233554;
     color: #fff;
 }
 
 ::-moz-selection {
-    background-color: #3F3D56;
+    background-color: #233554;
     color: #fff;
 }
 
@@ -35,7 +35,7 @@ html {
 }
 
 body {
-    background-color: #1e1e2c;
+    background-color: #020C1B;
 }
 
 img {

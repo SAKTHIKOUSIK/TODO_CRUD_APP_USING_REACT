@@ -11,6 +11,12 @@ export const todoBoxStyle = {
     mt: 3,
 };
 
+export const textFieldStyle = {
+    '& fieldset': {
+        borderColor: "rgba(255, 255, 255, 0.125)"
+    }
+};
+
 export const taskBoxStyle = {
     p: { xs: 1.6, sm: 2.5 },
     bgcolor: "transparent",
@@ -20,7 +26,7 @@ export const taskBoxStyle = {
 };
 
 export const taskItemStyle = {
-    bgcolor: "#191928",
+    bgcolor: "#03132b",
     borderRadius: "8px",
     p: 2,
     overflow: "hidden"

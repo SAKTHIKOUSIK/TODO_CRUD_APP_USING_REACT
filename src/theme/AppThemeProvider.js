@@ -27,7 +27,14 @@ const theme = createTheme({
                     padding: 0,
                 }
             }
-        }
+        },
+        MuiTooltip: {
+            styleOverrides: {
+                tooltip: {
+                    backgroundColor: "#233554"
+                }
+            }
+        },
     },
 });
 
