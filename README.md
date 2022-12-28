@@ -2,6 +2,19 @@
 
 ### [Demo Link](https://todo-x.netlify.app/) 🔗
 
+A React Task Management App which performs all the CRUD operations.
+
+<br/>
+
+## Features:
+
+- #### **Add Task**
+- #### **Edit / Update Task**
+- #### **Read / Check Task**
+- #### **Delete Task**
+- #### **Local Storage**
+- #### **Dark Theme**
+
 <br/>
 
 ## Technologies used:
