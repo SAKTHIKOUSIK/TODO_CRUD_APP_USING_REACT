@@ -10,8 +10,8 @@ import Header from './Header';
 
 const ToDo = () => {
 
-    const [inputValue, setInputValue] = useState("");
     const [tasks, setTasks] = useLocalStorage("todoList", []);
+    const [inputValue, setInputValue] = useState("");
     const [isEditing, setIsEditing] = useState(false);
     const [editedItemId, setEditedItemId] = useState(null);
 
@@ -53,10 +53,10 @@ const ToDo = () => {
     };
 
     // Editing a task
-    const handleIsEditing = (taskItem) => {
+    const editTask = (taskItem) => {
+        const itemToEdit = tasks.find(item => item.id === taskItem.id);
+        setInputValue(itemToEdit.value);
         setIsEditing(true);
-        const a = tasks.find(item => item.id === taskItem.id);
-        setInputValue(a.value);
         setEditedItemId(taskItem.id);
     };
 
@@ -79,7 +79,7 @@ const ToDo = () => {
                             tasks={tasks}
                             deleteTask={deleteTask}
                             checkTask={checkTask}
-                            handleIsEditing={handleIsEditing}
+                            editTask={editTask}
                         />
                     ) : (
                         <WelcomeScreen />

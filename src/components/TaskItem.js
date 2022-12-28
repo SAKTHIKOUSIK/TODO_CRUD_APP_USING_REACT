@@ -3,7 +3,7 @@ import { Stack, Typography, IconButton, Tooltip, Checkbox } from '@mui/material'
 import { Edit, Delete } from '@mui/icons-material';
 import { checkedItemStyle, taskItemStyle } from '../theme/customStyles';
 
-const TaskItem = ({ taskItem, deleteTask, checkTask, handleIsEditing }) => {
+const TaskItem = ({ taskItem, deleteTask, checkTask, editTask }) => {
 
     const { id, value, checked } = taskItem;
 
@@ -42,7 +42,7 @@ const TaskItem = ({ taskItem, deleteTask, checkTask, handleIsEditing }) => {
                 <Tooltip title="Edit">
                     <IconButton
                         aria-label="edit"
-                        onClick={() => handleIsEditing(taskItem)}
+                        onClick={() => editTask(taskItem)}
                     >
                         <Edit />
                     </IconButton>
