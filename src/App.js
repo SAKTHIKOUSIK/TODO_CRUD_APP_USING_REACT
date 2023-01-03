@@ -1,6 +1,6 @@
-import ToDo from './components/ToDo';
 import { Container } from '@mui/material';
 import { containerStyle } from './theme/customStyles';
+import ToDo from './pages/ToDo';
 
 const App = () => {
   return (

@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import { Box, Paper } from '@mui/material';
-import AddTask from './AddTask';
-import TaskList from './TaskList';
-import WelcomeScreen from './WelcomeScreen';
-import { todoBoxStyle, taskBoxStyle } from '../theme/customStyles';
 import useLocalStorage from '../hooks/useLocalStorage';
-import Header from './Header';
+import { todoBoxStyle, taskBoxStyle } from '../theme/customStyles';
+import { AddTask, Header, TaskList, WelcomeScreen } from '../components';
 
 
 const ToDo = () => {
