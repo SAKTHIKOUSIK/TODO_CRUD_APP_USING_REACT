@@ -3,7 +3,6 @@
 ### [Demo Link](https://todo-x.netlify.app/) 🔗
 
 A React Task Management App which performs all the CRUD operations.
-
 <br/>
 
 ## Features:
