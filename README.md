@@ -1,4 +1,4 @@
-## Todo-X | To Do List - React App
+## TODO_CRUD_APP_USING_REACT-X | To Do List - React App
 
 ### [Demo Link](https://todo-x.netlify.app/) 🔗
 
@@ -21,13 +21,7 @@ A React Task Management App which performs all the CRUD operations.
 - #### **React JS**
 - #### **Material-UI (MUI-5)**
 
-<br/>
 
-## Author:
-
-- **Gulshan Songara** - **[Portfolio Website](https://gulshansongara.netlify.app)**, **[Linkedin](https://www.linkedin.com/in/gulshan-songara/)**
-
-<br/>
 
 ## Available Scripts:
 
@@ -41,6 +35,4 @@ A React Task Management App which performs all the CRUD operations.
 
 <br/>
 
-## License:
 
-This project is licensed under the  **GPL-3.0 License** - see the [LICENSE](LICENSE.md) file for details.
